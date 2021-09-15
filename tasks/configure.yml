@@ -18,7 +18,7 @@
 - name: install snapraid config file
   template:
     src: snapraid.conf.j2
-    dest: /etc/snapraid.conf
+    dest: "{{ snapraid_config_path }}"
     owner: root
     group: root
     mode: 0775
